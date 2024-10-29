@@ -8,7 +8,7 @@ const Home = () => {
     const navigation = useNavigation();
     const database = getDatabase();
 
-    // Fetch saved locations from Firebase
+    // Hent gemte lokationer fra Firebase
     useEffect(() => {
         const locationsRef = ref(database, 'locations');
         onValue(locationsRef, (snapshot) => {
@@ -18,7 +18,7 @@ const Home = () => {
         });
     }, []);
 
-    // Navigate to Map screen with selected location coordinates
+    // Naviger til kortet med gemte lokationer, virker ikke endnu
     const navigateToMap = (location) => {
         navigation.navigate('Map', {
             latitude: location.latitude,
