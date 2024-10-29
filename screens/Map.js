@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import MapView from 'react-native-maps';
 
+// Sætter lokationen til at være i København
 const App = () => {
   const initialRegion = {
     latitude: 55.6761,  // Copenhagen latitude
@@ -9,7 +10,7 @@ const App = () => {
     latitudeDelta: 0.0922, // Zoom level
     longitudeDelta: 0.0421, // Zoom level
   };
-
+// Indlæser kortet
   return (
     <View style={styles.container}>
       <MapView
