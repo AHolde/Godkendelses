@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
+// Pseudo kode til mockup, kan ikke noget
 const Profile = () => {
     return (
         <View style={styles.container}>
