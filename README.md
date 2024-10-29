@@ -10,4 +10,4 @@ Install dependencies:
 npm install
 
 Kør:
-sudo npm expo start
+sudo npx expo start
