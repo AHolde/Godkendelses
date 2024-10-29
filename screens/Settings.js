@@ -5,7 +5,7 @@ const ToDoList = () => {
     const [task, setTask] = useState('');
     const [tasks, setTasks] = useState([]);
 
-    // Function to add a new task
+    // Tilføjer ny besøgssted
     const addTask = () => {
         if (task) {
             setTasks([...tasks, { id: Date.now().toString(), title: task }]);
@@ -13,7 +13,7 @@ const ToDoList = () => {
         }
     };
 
-    // Function to delete a task
+    // Fjerner besøgssted
     const deleteTask = (id) => {
         setTasks(tasks.filter(item => item.id !== id));
     };
