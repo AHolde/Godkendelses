@@ -6,7 +6,7 @@ const SavedLocations = () => {
     const [location, setLocation] = useState('');
     const database = getDatabase();
 
-    // Function to save location to Firebase
+    // Pusher gemte lokationer ind i Firebase
     const saveLocation = () => {
         if (location) {
             const locationsRef = ref(database, 'locations');
