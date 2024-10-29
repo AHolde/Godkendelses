@@ -25,7 +25,7 @@ const firebaseConfig = {
   measurementId: "G-PCZRE4X9FN"
 };
 
-// Initialize Firebase if not already initialized
+// Starter firebase hvis ikke allerede den er startet
 if (getApps().length === 0) {
     initializeApp(firebaseConfig);
     console.log("Firebase Initialized");
